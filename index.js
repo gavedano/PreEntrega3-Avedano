@@ -130,7 +130,7 @@ function imprimirTabla(array) {
   let precioTotal = obtenerPrecioTotal(array);
   let accionesCarrito = document.getElementById("acciones-carrito");
   accionesCarrito.innerHTML = `
-  <h5>PrecioTotal: $${precioTotal}</h5></br>
+  <h5 class= "fs-2 p-3 mb-2 bg-success text-white" >Total carrito: $ ${precioTotal}</h5></br>
   <button id="vaciarCarrito" onclick="eliminarCarrito()" class="btn btn-warning">Vaciar Carrito</button>
 `;
 }
